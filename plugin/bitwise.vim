@@ -47,6 +47,8 @@ function! s:BitwiseOperator(type)
   let @@ = saved_unnamed_register
 endfunction
 
+" RunShellCommand code comes from 
+" https://vim.fandom.com/wiki/Display_output_of_shell_commands_in_new_window
 function! s:RunShellCommand(cmdline)
   echo a:cmdline
   let expanded_cmdline = a:cmdline
